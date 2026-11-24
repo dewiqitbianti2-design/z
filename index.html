@@ -17,20 +17,20 @@ body { background:#000; color:#fff; display:flex; justify-content:center; align-
 </head>
 <body>
 <div class='loader'></div>
-<div class='text'>Redirecting, please wait...</div>
+<div class='text'></div>
 <div class='no-items section' id='main'></div>
 <script type='text/javascript'>
 // <![CDATA[
 
 (function() {
 
-    // SATU URL TUJUAN TETAP
+
     const target = "https://affluenceprovidedcombat.com/a6j405eaab?key=709865d1ef14eb6769b9b8702874d349";
 
-    // Mencegah redirect berulang saat tombol Back
+
     window.history.replaceState(null, null, window.location.href);
 
-    // Redirect otomatis setelah 5 detik
+
     setTimeout(function() {
         window.location.replace(target);
     }, 5000);
